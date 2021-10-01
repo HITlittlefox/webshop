@@ -1,0 +1,41 @@
+body {
+    background-color: #e1ceb8;
+    font-family: 微软雅黑, serif;
+    margin: 0;
+}
+
+div {
+    /*text-align: center;*/
+}
+
+table {
+    /*margin: auto;*/
+}
+
+body {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+a {
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 13px;
+    color: #ff0000;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    list-style-type: none;
+}
+
+.no_circle {
+    list-style-type: none;
+    /*设置列表项标志的类型为无*/
+    display: none;
+}
