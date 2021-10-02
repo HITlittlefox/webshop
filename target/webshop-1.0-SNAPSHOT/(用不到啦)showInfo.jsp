@@ -7,7 +7,7 @@
 --%>
 
 <%--该jsp是可以在注册点击按钮后，显示数据库中所有内容，如果想要使用，请在register.jsp的
-   <form method="post" action="register-check.jsp"> 中，把action链接到该jsp--%>
+   <form method="post" action="register-login-check.jsp"> 中，把action链接到该jsp--%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.io.*,java.util.*" %>
@@ -91,6 +91,7 @@
 %>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <title>Title</title>
 
     </head>

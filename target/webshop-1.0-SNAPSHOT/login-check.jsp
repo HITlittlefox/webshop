@@ -39,7 +39,8 @@
 
 <html>
     <head>
-        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <title>登录检查页面</title>
     </head>
     <body>
         <%
@@ -51,16 +52,11 @@
             stmt.execute(sql);
             ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {
-
                 //这里传过去的其实是一个userid，数据库第一列名
                 session.setAttribute("userid", String.valueOf(rs.getString("userid")));
-                response.sendRedirect("index.jsp?msg=true");
+                response.sendRedirect("Category1.jsp?login_msg=true");
             } else {
-        %>
-        <h2>登录失败！
-        </h2>
-        <%
-                response.sendRedirect("login.jsp?msg=false");
+                response.sendRedirect("login.jsp?login_msg=false");
             }
         %>
     </body>

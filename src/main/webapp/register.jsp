@@ -8,10 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>商城|登录</title>
+        <title>商城|注册</title>
     </head>
     <body>
         <div style="align-items: center">
+            <link rel="stylesheet" type="text/css" href="css/index.css"/>
             <h1>欢迎光临注册页面！</h1>
         </div>
 

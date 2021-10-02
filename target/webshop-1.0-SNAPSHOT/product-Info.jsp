@@ -1,18 +1,21 @@
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.DriverManager" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="com.example.webshop.entity.Category" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="com.example.webshop.entity.Product" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: fudon
   Date: 2021-10-02
   Time: 13:19
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="java.sql.Connection" %>
+<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.Statement" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="com.example.webshop.entity.Category" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.example.webshop.entity.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>

@@ -56,7 +56,8 @@
 
 <html>
     <head>
-        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <title>注册检查页面</title>
 
     </head>
     <body>

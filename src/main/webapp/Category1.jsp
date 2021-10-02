@@ -54,13 +54,6 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <title>商城|主页</title>
-        <%--        <%--%>
-        <%--            - - < link--%>
-        <%--            rel = "stylesheet"--%>
-        <%--            type = "text/css"--%>
-        <%--            href = "css/index.css" / > ----%>
-        <%--        %>--%>
-
     </head>
     <body>
         <div>
@@ -98,10 +91,10 @@
             }
 
         %>
+        <%--        <div >--%>
+        <%--            &lt;%&ndash;            ; justify-content: center&ndash;%&gt;--%>
+
         <div style="display: flex; flex-direction: row">
-            <%--            ; justify-content: center--%>
-
-
             <%
                 List<Long> collect2 = categories1.stream().map(Category::getCategory_id).collect(Collectors.toList());
                 String replace = collect2.toString().replace('[', '(');

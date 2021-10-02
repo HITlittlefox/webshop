@@ -19,6 +19,7 @@
             integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
             crossorigin="anonymous"></script>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <title>分类</title>
         <style>
             ul {
@@ -177,7 +178,7 @@
             // window.localStorage.setItem('cg', this.getAttribute('proid'))
             // console.log(this.getAttribute('proid'))
             // this.setAttribute('href', '/webshop_war/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
-            $('#showFrame').attr('src', '/webshop_war_exploded/productInfo.jsp?id=' + this.getAttribute('cid') + '&name=' + this.innerHTML)
+            $('#showFrame').attr('src', '/webshop_war_exploded/product-Info.jsp?id=' + this.getAttribute('cid') + '&name=' + this.innerHTML)
         })
     </script>
 </html>

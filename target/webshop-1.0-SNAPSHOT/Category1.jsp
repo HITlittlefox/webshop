@@ -52,22 +52,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>这里是主页+分类1！</title>
-        <%--        <%--%>
-        <%--            - - < link--%>
-        <%--            rel = "stylesheet"--%>
-        <%--            type = "text/css"--%>
-        <%--            href = "css/index.css" / > ----%>
-        <%--        %>--%>
-
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <title>商城|主页</title>
     </head>
     <body>
         <div>
+            <%
+                String f = request.getParameter("login_msg");
+                System.out.println(f);
+                if (Objects.equals(f, "true")) {
+            %>
+            <h2>您的登陆情况：登录成功啦！
+            </h2>
+            <%
+                }
+            %>
             <h1>这里是主页+分类1！</h1>
             <br/>
         </div>
-
-
         <%
             //查询节点
             String sql1 = "select * from category where parent_id  is null";
@@ -89,10 +91,10 @@
             }
 
         %>
+        <%--        <div >--%>
+        <%--            &lt;%&ndash;            ; justify-content: center&ndash;%&gt;--%>
+
         <div style="display: flex; flex-direction: row">
-            <%--            ; justify-content: center--%>
-
-
             <%
                 List<Long> collect2 = categories1.stream().map(Category::getCategory_id).collect(Collectors.toList());
                 String replace = collect2.toString().replace('[', '(');
