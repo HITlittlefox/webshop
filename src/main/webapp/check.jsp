@@ -54,7 +54,7 @@
 
                 //这里传过去的其实是一个userid，数据库第一列名
                 session.setAttribute("userid", String.valueOf(rs.getString("userid")));
-                response.sendRedirect("index.jsp");
+                response.sendRedirect("index.jsp?msg=true");
             } else {
         %>
         <h2>登录失败！

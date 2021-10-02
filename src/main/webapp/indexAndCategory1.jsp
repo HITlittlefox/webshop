@@ -9,9 +9,14 @@
 <%@ page import="java.io.*,java.util.*" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="com.example.webshop.entity.Category" %>
-
+<%@ page import="java.util.stream.Collectors" %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
 <%--todo 映入眼帘的主页--%>
 
 <%
@@ -42,76 +47,18 @@
 <%
     }
 %>
-<%
-    //查询所有父节点，也就是一级菜单
-    String sql1 = "select * from category where parent_id is null";
-    System.out.println(sql1);
-    stmt.execute(sql1);
-    ResultSet rs1 = stmt.executeQuery(sql1);
-
-    ArrayList<Category> categories1 = new ArrayList<>();
-    while (rs1.next()) {
-        Long id = rs1.getLong("category_id");
-        String name = rs1.getString("name");
-        Integer parentId = rs1.getInt("parent_id");
-        Integer level = rs1.getInt("level");
-        //装填对象
-        Category category = new Category(id, name, parentId, level);
-        //循环对象
-        categories1.add(category);
-    }
-
-%>
-
-
-<%
-    //查询所有二级节点
-    String sql2 = "select * from category where parent_id in (select category_id from category where parent_id is null)";
-    System.out.println(sql2);
-    stmt.execute(sql2);
-    ResultSet rs2 = stmt.executeQuery(sql2);
-
-    ArrayList<Category> categories2 = new ArrayList<>();
-    while (rs2.next()) {
-        Long id = rs2.getLong("category_id");
-        String name = rs2.getString("name");
-        Integer parentId = rs2.getInt("parent_id");
-        Integer level = rs2.getInt("level");
-        //装填对象
-        Category category2 = new Category(id, name, parentId, level);
-        //循环对象
-        categories2.add(category2);
-    }
-
-%>
-
-<%
-    //查询所有三级节点
-    String sql3 = "select * from category where parent_id in (select category_id from category where parent_id in (select category_id from category where parent_id is null))";
-    System.out.println(sql3);
-    stmt.execute(sql3);
-    ResultSet rs3 = stmt.executeQuery(sql3);
-
-    ArrayList<Category> categories3 = new ArrayList<>();
-    while (rs3.next()) {
-        Long id = rs3.getLong("category_id");
-        String name = rs3.getString("name");
-        Integer parentId = rs3.getInt("parent_id");
-        Integer level = rs3.getInt("level");
-        //装填对象
-        Category category3 = new Category(id, name, parentId, level);
-        //循环对象
-        categories3.add(category3);
-    }
-
-%>
 
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>这里是主页+分类1！</title>
-        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <%--        <%--%>
+        <%--            - - < link--%>
+        <%--            rel = "stylesheet"--%>
+        <%--            type = "text/css"--%>
+        <%--            href = "css/index.css" / > ----%>
+        <%--        %>--%>
 
     </head>
     <body>
@@ -120,93 +67,93 @@
             <br/>
         </div>
 
-        <%--        <c:forEach items="" var="i" begin="1" end="5">--%>
-        <%--        Item <c:out value="${i}"/><p>--%>
-        <%--        </c:forEach>--%>
-
-        <%--        todo :循环 第一层--%>
-        <%
-            for (Category category1 : categories1) {
-        %>
-        <a href="javascript:onclick=show() "><%=category1.getName()%>
-        </a>
-        <ul id="art" class="no_circle">
-
-            <%--        todo :循环 第二层--%>
-            <%
-                for (Category category2 : categories2) {
-            %>
-            <a href="javascript:onclick=show2() "><%=category2.getName()%>
-            </a>
-            <li id="tietu" class="no_circle">
-                <%--        todo :循环 第三层--%>
-                <%
-                    for (Category category3 : categories3) {
-                %>
-                <a href="javascript:onclick=show3() "><%=category3.getName()%>
-                </a>
-                <ol id="fangchan" class="no_circle">
-                </ol>
-                <%
-                    }
-                %>
-
-            </li>
-
-            <%
-                }
-            %>
-
-        </ul>
 
         <%
+            //查询节点
+            String sql1 = "select * from category where parent_id  is null";
+//            String sql1 = "select * from category where parent_id in (select category_id from category where parent_id in (select category_id from category where parent_id is null))";
+            System.out.println(sql1);
+            stmt.execute(sql1);
+            ResultSet rs1 = stmt.executeQuery(sql1);
+
+            ArrayList<Category> categories1 = new ArrayList<>();
+            while (rs1.next()) {
+                Long id = rs1.getLong("category_id");
+                String name = rs1.getString("name");
+                Integer parentId = rs1.getInt("parent_id");
+                Integer level = rs1.getInt("level");
+                //装填对象
+                Category category = new Category(id, name, parentId, level);
+                //循环对象
+                categories1.add(category);
             }
+
         %>
+        <div style="display: flex; flex-direction: row">
+            <%--            ; justify-content: center--%>
+
+
+            <%
+                List<Long> collect2 = categories1.stream().map(Category::getCategory_id).collect(Collectors.toList());
+                String replace = collect2.toString().replace('[', '(');
+                String replace1 = replace.replace(']', ')');
+                // 节点2
+                String sql2 = "select * from category where parent_id in " + replace1;
+                System.out.println(sql2);
+                stmt.execute(sql2);
+                ResultSet rs2 = stmt.executeQuery(sql2);
+                ArrayList<Category> categories2 = new ArrayList<>();
+                while (rs2.next()) {
+                    Long id1 = rs2.getLong("category_id");
+                    String name1 = rs2.getString("name");
+                    Integer parentId1 = rs2.getInt("parent_id");
+                    Integer level1 = rs2.getInt("level");
+                    //装填对象
+                    Category category1 = new Category(id1, name1, parentId1, level1);
+                    //循环对象
+                    categories2.add(category1);
+                }
+                System.out.println(categories2);
+                // 优化 列转行
+                for (Category category : categories1) {
+            %>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true"><%=category.getName()%>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+
+                    <%
+                        for (Category category2 : categories2) {
+                            if (!(category.getCategory_id().intValue() == category2.getParent_id().intValue())) {
+                                continue;
+                            }
+                    %>
+                    <li><a href="#" class="toggleLink" proid=<%=category2.getCategory_id()%>>
+                        <%=category2.getName()%>
+                    </a></li>
+                    <%
+                        }%>
+                </ul>
+            </div>
+            <%}%>
+
+        </div>
+        <div>
+            <iframe id="showFrame" src="" frameborder="0" scrolling="none" width="100%" height="100%"></iframe>
+        </div>
 
     </body>
+    <script>
+        $('.toggleLink').click(function (event) {
+            window.localStorage.setItem('cg', this.getAttribute('proid'))
+            // console.log(this.getAttribute('proid'))
+            // this.setAttribute('href', '/webshop_war/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
+            $('#showFrame').attr('src', '/webshop_war_exploded/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
+        })
+
+    </script>
 </html>
 
 
-<script type="text/javascript">
-    function show() {
-        if (document.getElementById("art").style.display == 'block') {
-            document.getElementById("art").style.display = 'none';
-            //触动的ul如果处于显示状态，即隐藏
-        } else {
-            document.getElementById("art").style.display = 'block';
-            //触动的ul如果处于隐藏状态，即显示
-        }
-    }
-
-    function show2() {
-        if (document.getElementById("tietu").style.display == 'block') {
-            document.getElementById("tietu").style.display = 'none';
-            //触动的ul如果处于显示状态，即隐藏
-        } else {
-            document.getElementById("tietu").style.display = 'block';
-            //触动的ul如果处于隐藏状态，即显示
-        }
-    }
-
-    function show3() {
-        if (document.getElementById("fangchan").style.display == 'block') {
-            document.getElementById("fangchan").style.display = 'none';
-            //触动的ul如果处于显示状态，即隐藏
-        } else {
-            document.getElementById("fangchan").style.display = 'block';
-            //触动的ul如果处于隐藏状态，即显示
-        }
-    }
-
-
-    function show4() {
-        if (document.getElementById("yule").style.display == 'block') {
-            document.getElementById("yule").style.display = 'none';
-            //触动的ul如果处于显示状态，即隐藏
-        } else {
-            document.getElementById("yule").style.display = 'block';
-            //触动的ul如果处于隐藏状态，即显示
-        }
-    }
-
-</script>

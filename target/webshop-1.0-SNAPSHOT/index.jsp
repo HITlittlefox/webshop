@@ -14,6 +14,16 @@
     </head>
     <body>
         <div>
+            <%
+                String f = request.getParameter("msg");
+                System.out.println(f);
+                if (Objects.equals(f, "true")) {
+            %>
+            <h2>您登录成功啦
+            </h2>
+            <%
+                }
+            %>
             <h1>电子商城首页</h1>
             <br/>
 
