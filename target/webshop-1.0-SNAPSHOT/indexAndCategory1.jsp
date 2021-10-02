@@ -123,33 +123,45 @@
         <%--        <c:forEach items="" var="i" begin="1" end="5">--%>
         <%--        Item <c:out value="${i}"/><p>--%>
         <%--        </c:forEach>--%>
+
+        <%--        todo :循环 第一层--%>
         <%
             for (Category category1 : categories1) {
         %>
         <a href="javascript:onclick=show() "><%=category1.getName()%>
         </a>
         <ul id="art" class="no_circle">
+
             <%--        todo :循环 第二层--%>
             <%
                 for (Category category2 : categories2) {
-
             %>
-            <li><%=category2.getName()%>
+            <a href="javascript:onclick=show2() "><%=category2.getName()%>
+            </a>
+            <li id="tietu" class="no_circle">
                 <%--        todo :循环 第三层--%>
                 <%
                     for (Category category3 : categories3) {
                 %>
-                <ol><%=category3.getName()%>
+                <a href="javascript:onclick=show3() "><%=category3.getName()%>
+                </a>
+                <ol id="fangchan" class="no_circle">
                 </ol>
-                <%}%>
+                <%
+                    }
+                %>
 
             </li>
 
-            <%}%>
+            <%
+                }
+            %>
 
         </ul>
 
-        <%}%>
+        <%
+            }
+        %>
 
     </body>
 </html>
