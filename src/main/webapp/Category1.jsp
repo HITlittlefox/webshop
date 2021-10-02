@@ -52,8 +52,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <title>商城|主页</title>
+        <!-- 引入 layui.css -->
+        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+
     </head>
     <body>
         <div>

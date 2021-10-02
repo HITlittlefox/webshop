@@ -10,25 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6334a563-7f00-44e7-925f-ef23d5736805" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexAndCategory1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/productInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-check.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/showInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/(用不到啦)showInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/check.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/indexAndCategory1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/indexAndCategory1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/indexAndCategory1.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/productInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/productInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/productInfo.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register-check.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/showInfo.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +60,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -179,6 +179,7 @@
       <updated>1633154878629</updated>
       <workItem from="1633154883526" duration="497000" />
       <workItem from="1633164402977" duration="2790000" />
+      <workItem from="1633181620353" duration="3654000" />
     </task>
     <servers />
   </component>
@@ -195,5 +196,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

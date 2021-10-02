@@ -19,8 +19,11 @@
             integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
             crossorigin="anonymous"></script>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <title>分类</title>
+        <!-- 引入 layui.css -->
+        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+
         <style>
             ul {
                 padding: .1rem 2%;
