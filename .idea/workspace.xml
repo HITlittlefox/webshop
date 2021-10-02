@@ -10,29 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6334a563-7f00-44e7-925f-ef23d5736805" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webshop/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webshop/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-check.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/indexAndCategory1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/productInfo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register-check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product-Info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,6 +51,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1ywFjF74pYpd4ndLG034sBREclw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
@@ -66,7 +67,11 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -180,6 +185,8 @@
       <workItem from="1633154883526" duration="497000" />
       <workItem from="1633164402977" duration="2790000" />
       <workItem from="1633181620353" duration="3654000" />
+      <workItem from="1633187216838" duration="3376000" />
+      <workItem from="1633190908991" duration="6749000" />
     </task>
     <servers />
   </component>

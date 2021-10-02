@@ -165,6 +165,11 @@
                     }
 
                     for (Product product : products) {
+                        Long buyId = product.getProductId();
+                        String buyName = product.getName();
+                        String buyDes = product.getDes();
+                        Integer buyPrice = product.getPrice();
+                        Integer buyCategoryId = product.getCategoryId();
                 %>
                 <li>
                     <%--            <img src="" alt="" style="display: block;" width="100%">--%>
@@ -172,6 +177,9 @@
                     <div class=""><%=product.getName()%>
                     </div>
                     <div class="price"><%=product.getPrice()%>
+                    </div>
+                    <div>
+                        <a href='/webshop_war_exploded/PutItCart?id=<%=product.getProductId()%>&price=<%=product.getPrice()%>'>添加到购物车</a>
                     </div>
                 </li>
                 <%}%>

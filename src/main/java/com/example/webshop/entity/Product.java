@@ -13,15 +13,15 @@ public class Product {
     private Integer price;
     private Integer categoryId;
 
+    public Product() {
+    }
+
     public Product(Long productId, String name, String des, Integer price, Integer categoryId) {
         this.productId = productId;
         this.name = name;
         this.des = des;
         this.price = price;
         this.categoryId = categoryId;
-    }
-
-    public Product() {
     }
 
     @Override

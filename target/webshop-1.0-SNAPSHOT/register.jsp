@@ -16,7 +16,7 @@
 
         <title>商城|注册</title>
     </head>
-    <body>
+    <body style="background-color: #e1ceb8;font-family: 微软雅黑,serif;margin: 0;">
         <div style="align-items: center">
             <h1>欢迎光临注册页面！</h1>
         </div>
