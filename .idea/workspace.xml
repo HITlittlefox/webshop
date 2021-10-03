@@ -10,15 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6334a563-7f00-44e7-925f-ef23d5736805" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webshop/entity/PutItCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webshop/entity/PutItCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/(用不到啦)showInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/showInfo2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showInfo2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/PutItCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/webshop/entity/PutItCart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/Category1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/PutItCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/WEB-INF/classes/com/example/webshop/entity/PutItCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/showInfo2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/showInfo2.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -69,9 +82,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3363184" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -92,8 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+    <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_202\jre" nameIsGenerated="true">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -105,6 +118,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="adf1d4e9-1dc2-4024-889b-50367478188e" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -198,7 +212,12 @@
       <workItem from="1633226042132" duration="7021000" />
       <workItem from="1633240986565" duration="1656000" />
       <workItem from="1633249347619" duration="1749000" />
-      <workItem from="1633251391201" duration="3321000" />
+      <workItem from="1633251391201" duration="3535000" />
+      <workItem from="1633265808782" duration="2320000" />
+      <workItem from="1633268288090" duration="128000" />
+      <workItem from="1633268457708" duration="1305000" />
+      <workItem from="1633269826340" duration="1796000" />
+      <workItem from="1633273177933" duration="5608000" />
     </task>
     <servers />
   </component>

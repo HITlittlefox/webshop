@@ -167,6 +167,7 @@
         <h3 id="importMsg"><%=importMsg%>
         </h3>
         <h3><a href="index.jsp">回到首页</a></h3>
+        <h3><a href="showInfo2.jsp?userid=<%=userid%>">显示当前用户的购物车信息</a></h3>
     </body>
 
     <script>

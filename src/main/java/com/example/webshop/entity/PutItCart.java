@@ -130,8 +130,10 @@ public class PutItCart extends HttpServlet {
         try {
             if (rs2.next()) {
                 response.setCharacterEncoding("UTF-8");
-                response.getWriter().write("<h3>用户信息查找成功</h3>");
-                response.sendRedirect("showInfo2.jsp?userid=" + userid + "");
+//                response.getWriter().write("<h3>用户信息查找成功</h3>");
+
+                //这条语句可以显示当前用户的购物车信息
+                //response.sendRedirect("showInfo2.jsp?userid=" + userid + "");
 
                 System.out.println("<h3>rs2查找成功</h3>");
 //                System.out.println(rs2);
