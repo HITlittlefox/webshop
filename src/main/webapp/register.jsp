@@ -9,39 +9,31 @@
 
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="charset=gb2312">
+
         <!-- 引入 layui.css -->
-        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
-        <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
-        <!-- 引入 layui.js -->
+
+        <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
+        <link rel="stylesheet" href="css/register.css">
 
         <title>商城|注册</title>
     </head>
-    <body style="background-color: #e1ceb8;font-family: 微软雅黑,serif;margin: 0;">
-        <div style="align-items: center">
-            <h1>欢迎光临注册页面！</h1>
+    <body>
+        <div id="loginDiv">
+            <form method="post" action="register-check.jsp">
+                <h1>注册</h1>
+                <p>用户姓名:<input id="user" type="text" name="user" autofocus required><label id="name_trip"></label>
+                </p>
+
+                <p>用户密码:<input id="psd" type="password" name="psd" required></p>
+
+                <p>确认密码:<input placeholder="请再次输入密码" id="psd-check" type="password" name="psd-check"
+                               required></p>
+                <p style="text-align: center;">
+                    <input type="submit" class="button" value="注册">
+                </p>
+            </form>
         </div>
-
-        <form method="post" action="register-check.jsp">
-
-            <table>
-                <tr>
-                    <td>名称</td>
-                    <td><input id="user" type="text" name="user" onblur="checkUserNull()"></td>
-                </tr>
-                <tr>
-                    <td>密码</td>
-                    <td><input id="psd" type="password" name="psd" onblur="checkPsdNull()"></td>
-                </tr>
-                <tr>
-                <tr>
-                    <td>确认密码</td>
-                    <td><input placeholder="请再次输入密码" id="psd-check" type="password" name="psd-check"
-                               onblur="checkPsdCheckNull;checkPassword()"></td>
-                </tr>
-
-            </table>
-            <input type="submit" value="注册">
-            <%--//todo 密码校验--%>
 
     </body>
 </html>

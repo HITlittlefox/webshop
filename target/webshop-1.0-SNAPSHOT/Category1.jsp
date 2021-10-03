@@ -52,18 +52,26 @@
         <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <title>商城|主页</title>
         <!-- 引入 layui.css -->
-        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
-        <meta content="text/html; charset=UTF-8; 750px"/>
+        <%--        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
+        <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <meta content="text/html; charset=UTF-8;"/>
     </head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+    </style>
     <body>
-        <div>
-            <%
-                String f = request.getParameter("userid");
-                System.out.println(f);
-            %>
-            <h1>这里是主页+分类1！</h1>
-            <br/>
-        </div>
+
+        <%
+            String f = request.getParameter("userid");
+            System.out.println(f);
+        %>
+        <h3>这里是主页+分类1！</h3>
+        <br/>
+
         <%
             //查询节点
             String sql1 = "select * from category where parent_id  is null";
@@ -162,12 +170,12 @@
 
         %>
 
-        <h3>您的用户userid是：
-        </h3>
-        <h3 id="importMsg"><%=importMsg%>
-        </h3>
-        <h3><a href="index.jsp">回到首页</a></h3>
-        <h3><a href="showInfo2.jsp?userid=<%=userid%>">显示当前用户的购物车信息</a></h3>
+        <p>您的用户userid是：
+        </p>
+        <p id="importMsg"><%=importMsg%>
+        </p>
+        <p><a href="index.jsp">回到首页</a></p>
+        <p><a href="showInfo2.jsp?userid=<%=userid%>">显示当前用户的购物车信息</a></p>
     </body>
 
     <script>

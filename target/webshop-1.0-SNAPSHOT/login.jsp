@@ -14,13 +14,12 @@
         <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <title>商城|登录</title>
         <!-- 引入 layui.css -->
-        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+        <link rel="stylesheet" href="css/login.css">
+        <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
 
     </head>
     <body>
-        <div style="align-items: center">
-            <h1>欢迎光临登录页面！</h1>
-        </div>
+
         <%
             String f = request.getParameter("login_msg");
             System.out.println(f);
@@ -31,21 +30,19 @@
         <%
             }
         %>
-        <form method="post" action="login-check.jsp">
-            <table>
-                <tr>
-                    <td>用户名</td>
-                    <td><input type="text" name="user"></td>
-                </tr>
-                <tr>
-                    <td>密码</td>
-                    <td><input type="password" name="psd"></td>
-                </tr>
-            </table>
 
-            <input type="submit" value="提交">
-            <a href="register.jsp">注册</a>
-        </form>
+        <div id="loginDiv">
+            <form method="post" action="login-check.jsp" id="form">
+                <h1 style="text-align: center;color: aliceblue;">登陆</h1>
+                <p>用户:<input id="userName" type="text" name="user"><label id="name_trip"></label></p>
 
+                <p>密码:<input id="password" type="password" name="psd"><label id="password_trip"></label></p>
+
+                <div style="text-align: center;margin-top: 30px;">
+                    <input type="submit" class="button" value="登陆">
+                    <a href="register.jsp" class="button">注册</a>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

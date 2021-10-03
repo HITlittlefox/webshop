@@ -11,7 +11,8 @@
         <title>BigWebShop</title>
         <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <!-- 引入 layui.css -->
-        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+        <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 
     </head>
