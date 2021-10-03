@@ -183,6 +183,9 @@
                     <div>
                         <a href='/webshop_war_exploded/PutItCart?id=<%=product.getProductId()%>&price=<%=product.getPrice()%>&userid=<%=userid%>'>添加到购物车</a>
                     </div>
+                    <%--                    <div>--%>
+                    <%--                        <a href='/webshop_war_exploded/Category1.jsp?userid=<%=userid%>'>返回目录</a>--%>
+                    <%--                    </div>--%>
                 </li>
                 <%}%>
             </ul>

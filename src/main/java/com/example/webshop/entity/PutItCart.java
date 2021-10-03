@@ -97,27 +97,27 @@ public class PutItCart extends HttpServlet {
         }
 
         // 第二条sql语句！进行select
-        sql = "select * from users where userid = " + userid + " ";
-        System.out.println(sql);
-        ResultSet rs = null;
+        String sql1 = "select * from users where userid = " + userid + " ";
+        System.out.println(sql1);
+        ResultSet rs1 = null;
         try {
-            rs = stmt.executeQuery(sql);
+            rs1 = stmt.executeQuery(sql1);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         try {
-            if (rs.next()) {
-                System.out.println(rs);
-                System.out.println(rs.getString("userid"));
-                System.out.println(rs.getString("name"));
-                System.out.println(rs.getString("psd"));
+            if (rs1.next()) {
+                System.out.println(rs1);
+                System.out.println(rs1.getString("userid"));
+                System.out.println(rs1.getString("name"));
+                System.out.println(rs1.getString("psd"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
 
-        // 第二条sql语句！进行select
+        // 第三条sql语句！进行select
         String sql2 = "select * from products where product_id = " + id + " ";
         System.out.println(sql2);
         ResultSet rs2 = null;
@@ -134,6 +134,16 @@ public class PutItCart extends HttpServlet {
                 System.out.println(rs2.getString("des"));
                 System.out.println(rs2.getString("price"));
                 System.out.println(rs2.getString("category_id"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        try {
+            if (rs2.next()) {
+                //这里传过去的其实是一个userid，数据库第一列名
+                response.sendRedirect("Category1.jsp?userid=" + userid + "");
+            } else {
+                System.out.println("no");
             }
         } catch (SQLException e) {
             e.printStackTrace();

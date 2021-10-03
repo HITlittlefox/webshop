@@ -12,6 +12,7 @@
     <list default="true" id="6334a563-7f00-44e7-925f-ef23d5736805" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/webshop/entity/PutItCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/webshop/entity/PutItCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +183,7 @@
       <workItem from="1633187216838" duration="3376000" />
       <workItem from="1633190908991" duration="6749000" />
       <workItem from="1633226042132" duration="7021000" />
+      <workItem from="1633240986565" duration="1656000" />
     </task>
     <servers />
   </component>
