@@ -22,14 +22,6 @@
 <%
     String userid = request.getParameter("userid");
     System.out.println("youruseridddd" + userid);
-
-
-    if (userid != null) {
-%>
-<h2>您的登陆情况：登录成功啦！
-</h2>
-<%
-    }
 %>
 <%
     //数据库链接
@@ -51,13 +43,6 @@
     //实例化链接
     Connection conn = DriverManager.getConnection(url);
     Statement stmt = conn.createStatement();
-
-    if (conn != null) {
-%>
-<h2><%="数据库连接成功！"%>
-</h2>
-<%
-    }
 %>
 
 
@@ -68,19 +53,13 @@
         <title>商城|主页</title>
         <!-- 引入 layui.css -->
         <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
-
+        <meta content="text/html; charset=UTF-8; 750px"/>
     </head>
     <body>
         <div>
             <%
                 String f = request.getParameter("userid");
                 System.out.println(f);
-                if (f != null) {
-            %>
-            <h2>您的登陆情况：登录成功啦！
-            </h2>
-            <%
-                }
             %>
             <h1>这里是主页+分类1！</h1>
             <br/>
@@ -158,7 +137,11 @@
 
         </div>
         <div>
-            <iframe id="showFrame" src="" frameborder="0" scrolling="none" width="100%" height="100%"></iframe>
+            <%--            <iframe id="showFrame" src="" frameborder="0" scrolling="none" width="100%" height="100%"--%>
+            <%--                    src="studentInfo/abstract.html"></iframe>--%>
+            <iframe name="showFrame" id="showFrame" frameborder="0"
+                    οnlοad="setFirstIframeHeight('showFrame')" scrolling="no" width="100%" height="500">
+            </iframe>
         </div>
 
 
@@ -179,9 +162,13 @@
 
         %>
 
+        <h3>您的用户userid是：
+        </h3>
         <h3 id="importMsg"><%=importMsg%>
         </h3>
+        <h3><a href="index.jsp">回到首页</a></h3>
     </body>
+
     <script>
         $('.toggleLink').click(function (event) {
             window.localStorage.setItem('cg', this.getAttribute('proid'))
@@ -205,6 +192,16 @@
             $('#showFrame').attr('src', '/webshop_war_exploded/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML + '&userid=' + $("#importMsg").text())
         })
 
+        //获取被包含的页面的静态高度，来设置iframe的高度
+        function setFirstIframeHeight(value) {
+            if (value == "showFrame") {
+                var personHeight = jQuery('#showFrame').contents().find("meta").attr("content");
+                jQuery('#showFrame').height(personHeight);
+            } else if (value == "cell") {
+                var cellHeight = jQuery('#cell').contents().find("meta").attr("content");
+                jQuery('#cell').height(cellHeight);
+            }
+        }
     </script>
 
 

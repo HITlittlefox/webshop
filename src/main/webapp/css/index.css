@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+html {
+    overflow: hidden;
+}
+
 div {
     /*text-align: center;*/
 }
