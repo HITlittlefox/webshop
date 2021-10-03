@@ -33,17 +33,15 @@ public class PutItCart extends HttpServlet {
         String price = request.getParameter("price");
 
 
-
-
         String userid = (String) request.getParameter("userid");
 
-//        todo:用户名问题完成进度90%。已经可以把userid传递到productid同一页。（但是要吃饭，所以等会再去搞剩下10%）
-//        todo:同时把userid和productid insert进入数据库。
+//        todo:(已完成)用户名问题完成进度90%。已经可以把userid传递到productid同一页。（但是要吃饭，所以等会再去搞剩下10%）
+//        todo:(已完成)同时把userid和productid insert进入数据库。
 
-        
 
         request.setAttribute("id", id);
 //        request.setAttribute("price", price);
+        request.setAttribute("userid", userid);
 
 //        session.setAttribute("userid", userid); //保存到session
 //
@@ -86,7 +84,7 @@ public class PutItCart extends HttpServlet {
         }
 
         //第一条sql语句！进行insert
-        String sql = "insert into shopping_cart (product_id) values ('" + id + "')";
+        String sql = "insert into shopping_cart (product_id,user_id) values ('" + id + "','" + userid + "')";
 //        String sql = "insert into shopping_cart (product_id,price) values (23,2)";//ok没接收到值所以显示类型不对
         try {
             boolean execute = stmt.execute(sql);
@@ -99,7 +97,7 @@ public class PutItCart extends HttpServlet {
         }
 
         // 第二条sql语句！进行select
-        sql = "select * from shopping_cart where product_id = " + id + " ";
+        sql = "select * from users where userid = " + userid + " ";
         System.out.println(sql);
         ResultSet rs = null;
         try {
@@ -110,11 +108,9 @@ public class PutItCart extends HttpServlet {
         try {
             if (rs.next()) {
                 System.out.println(rs);
-                System.out.println(rs.getString("product_id"));
-                System.out.println(rs.getString("amount"));
-                System.out.println(rs.getString("price"));
-                System.out.println(rs.getString("user_id"));
-                System.out.println(rs.getString("cart_id"));
+                System.out.println(rs.getString("userid"));
+                System.out.println(rs.getString("name"));
+                System.out.println(rs.getString("psd"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
