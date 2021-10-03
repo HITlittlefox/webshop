@@ -143,7 +143,9 @@
                 <%
 
                     String id = String.valueOf(request.getAttribute("id"));
-
+//                    String userid = request.getParameter("userid");
+                    String userid = (String) request.getParameter("userid");
+                    System.out.println("yourUserIdInProduct-info.jsp" + userid);
                     //查询节点 获取最后一集商品分类
                     String sql1 = "select * from products where category_id = " + request.getParameter("id") + "";
 //            String sql1 = "select * from category where parent_id in (select category_id from category where parent_id in (select category_id from category where parent_id is null))";
@@ -179,7 +181,7 @@
                     <div class="price"><%=product.getPrice()%>
                     </div>
                     <div>
-                        <a href='/webshop_war_exploded/PutItCart?id=<%=product.getProductId()%>&price=<%=product.getPrice()%>'>添加到购物车</a>
+                        <a href='/webshop_war_exploded/PutItCart?id=<%=product.getProductId()%>&price=<%=product.getPrice()%>&userid=<%=userid%>'>添加到购物车</a>
                     </div>
                 </li>
                 <%}%>

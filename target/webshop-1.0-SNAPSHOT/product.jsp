@@ -136,6 +136,11 @@
             <%
                 String id = String.valueOf(request.getAttribute("id"));
 
+
+                String userid = (String) request.getParameter("userid");
+                System.out.println("thisistheUseridAtproduct.jsp:" + userid);
+
+
                 //查询节点 获取最后一集商品分类
                 String sql1 = "select * from category where parent_id = " + id + "";
 //            String sql1 = "select * from category where parent_id in (select category_id from category where parent_id in (select category_id from category where parent_id is null))";
@@ -174,14 +179,31 @@
             </div>
             <iframe id="showFrame" src="" frameborder="0" width="100%" height="100%"></iframe>
         </div>
+        <%
+            //    session.setAttribute("userid", userid); //保存到session
+            //    System.out.println("what!" + (String) session.getAttribute("userid"));
+            request.getSession().setAttribute("userid", userid);
+            System.out.println("whatproductuserid!" + (String) session.getAttribute("userid"));
 
+            //    sessionStorage.setItem("lastname", "Smith");
+
+            String importMsg = "";
+            if (request.getSession().getAttribute("userid") != null) {
+                importMsg = request.getSession().getAttribute("userid").toString();
+                System.out.println(importMsg);
+            }
+//            request.getSession().setAttribute("userid", "");
+
+        %>
+        <h3 id="importMsg"><%=importMsg%>
+        </h3>
     </body>
     <script>
         $('.toggleLink').click(function (event) {
             // window.localStorage.setItem('cg', this.getAttribute('proid'))
             // console.log(this.getAttribute('proid'))
             // this.setAttribute('href', '/webshop_war/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
-            $('#showFrame').attr('src', '/webshop_war_exploded/product-Info.jsp?id=' + this.getAttribute('cid') + '&name=' + this.innerHTML)
+            $('#showFrame').attr('src', '/webshop_war_exploded/product-Info.jsp?id=' + this.getAttribute('cid') + '&name=' + this.innerHTML + '&userid=' + $("#importMsg").text())
         })
     </script>
 </html>

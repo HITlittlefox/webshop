@@ -50,6 +50,8 @@
             String name = request.getParameter("user");
             String psd = request.getParameter("psd");
 
+            //todo:(已完成)通过username拿到userid，然后把userid传到下一个页面
+
             String sql = "select userid from users where name ='" + name + "' and psd= '" + psd + "'";
             System.out.println(sql);
             stmt.execute(sql);
@@ -57,7 +59,7 @@
             if (rs.next()) {
                 //这里传过去的其实是一个userid，数据库第一列名
                 session.setAttribute("userid", String.valueOf(rs.getString("userid")));
-                response.sendRedirect("Category1.jsp?login_msg=true");
+                response.sendRedirect("Category1.jsp?userid=" + rs.getString("userid") + "");
             } else {
                 response.sendRedirect("login.jsp?login_msg=false");
             }

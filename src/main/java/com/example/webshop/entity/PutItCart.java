@@ -31,9 +31,24 @@ public class PutItCart extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("id");
         String price = request.getParameter("price");
-        request.setAttribute("id", id);
-        request.setAttribute("price", price);
 
+
+
+
+        String userid = (String) request.getParameter("userid");
+
+//        todo:用户名问题完成进度90%。已经可以把userid传递到productid同一页。（但是要吃饭，所以等会再去搞剩下10%）
+//        todo:同时把userid和productid insert进入数据库。
+
+        
+
+        request.setAttribute("id", id);
+//        request.setAttribute("price", price);
+
+//        session.setAttribute("userid", userid); //保存到session
+//
+//        String userid = (String) session.getAttribute("userid");
+//        System.out.println("yourUserId" + userid);
 
         //数据库链接
         String userName = "root";

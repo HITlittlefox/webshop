@@ -20,6 +20,18 @@
 <%--todo 映入眼帘的主页--%>
 
 <%
+    String userid = request.getParameter("userid");
+    System.out.println("youruseridddd" + userid);
+
+
+    if (userid != null) {
+%>
+<h2>您的登陆情况：登录成功啦！
+</h2>
+<%
+    }
+%>
+<%
     //数据库链接
     String userName = "root";
     String userPassword = "123456";
@@ -61,9 +73,9 @@
     <body>
         <div>
             <%
-                String f = request.getParameter("login_msg");
+                String f = request.getParameter("userid");
                 System.out.println(f);
-                if (Objects.equals(f, "true")) {
+                if (f != null) {
             %>
             <h2>您的登陆情况：登录成功啦！
             </h2>
@@ -149,16 +161,53 @@
             <iframe id="showFrame" src="" frameborder="0" scrolling="none" width="100%" height="100%"></iframe>
         </div>
 
+
+        <%
+            //    session.setAttribute("userid", userid); //保存到session
+            //    System.out.println("what!" + (String) session.getAttribute("userid"));
+            request.getSession().setAttribute("userid", userid);
+            System.out.println("what!" + (String) session.getAttribute("userid"));
+
+            //    sessionStorage.setItem("lastname", "Smith");
+
+            String importMsg = "";
+            if (request.getSession().getAttribute("userid") != null) {
+                importMsg = request.getSession().getAttribute("userid").toString();
+                System.out.println(importMsg);
+            }
+//            request.getSession().setAttribute("userid", "");
+
+        %>
+
+        <h3 id="importMsg"><%=importMsg%>
+        </h3>
     </body>
     <script>
         $('.toggleLink').click(function (event) {
             window.localStorage.setItem('cg', this.getAttribute('proid'))
+            // window.localStorage.setItem('userid', request.getParameter("userid"))
             // console.log(this.getAttribute('proid'))
             // this.setAttribute('href', '/webshop_war/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
-            $('#showFrame').attr('src', '/webshop_war_exploded/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
+
+            // $(document).ready(function () {
+            //     var msg = ""
+            //     if ($("#importMsg").text() != null) {
+            //         msg = $("#importMsg").text();
+            //     }
+            //     // if (msg != "") {
+            //     //     alert(msg);
+            //     //
+            //     // }
+            // });
+
+            <%--var msg = <%=(String) session.getAttribute("userid")%>;--%>
+
+            $('#showFrame').attr('src', '/webshop_war_exploded/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML + '&userid=' + $("#importMsg").text())
         })
 
     </script>
+
+
 </html>
 
 

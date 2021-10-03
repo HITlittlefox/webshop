@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.file.FileStore;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
@@ -26,7 +27,11 @@ public class HelloServlet extends HttpServlet {
         String name = request.getParameter("name");
         request.setAttribute("id", id);
         request.setAttribute("name", name);
-        request.getRequestDispatcher("/product.jsp").forward(request, response);
+        String userid = (String) request.getParameter("userid");
+        System.out.println("thisistheUseridAtHelloServlet:" + userid);
+        request.getRequestDispatcher("/product.jsp" + "?userid=" + userid).forward(request, response);
+
+
     }
 
     @Override
