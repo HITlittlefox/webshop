@@ -28,8 +28,6 @@
         <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
         <link rel="stylesheet" href="css/category1.css">
         <link rel="stylesheet" href="css/proinfo.css">
-
-
         <title>商品详情</title>
     </head>
     <body>
@@ -103,6 +101,7 @@
                     <div class="price"><%=product.getPrice()%>
                     </div>
                     <div>
+                        <%--去servlet--%>
                         <a href='/webshop_war_exploded/PutItCart?id=<%=product.getProductId()%>&price=<%=product.getPrice()%>&userid=<%=userid%>'>添加到购物车</a>
                     </div>
                     <%--                    <div>--%>

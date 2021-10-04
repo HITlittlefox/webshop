@@ -13,26 +13,21 @@
         <!-- 引入 layui.css -->
         <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
         <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
+        <link rel="stylesheet" href="css/category1.css">
 
     </head>
     <body>
-        <div>
-            <h1>电子商城首页</h1>
+        <div align="center">
             <br/>
+            <br/><br/><br/> <br/>
+            <br/><br/><br/> <br/>
             <br/><br/><br/>
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <h1><a href="login.jsp">登录</a></h1>
-                    </td>
-                    <td>
-                        <h1><a href="register.jsp">注册</a></h1>
-                    </td>
-                </tr>
-            </table>
+            <h1>电子商城首页</h1>
+
+            <h1><a style="color:pink" href="login.jsp">登录</a></h1>
+
+            <h1><a style="color:pink" href="register.jsp">注册</a></h1>
+
         </div>
 
     </body>

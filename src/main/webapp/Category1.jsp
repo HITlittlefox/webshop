@@ -158,7 +158,6 @@
                 importMsg = request.getSession().getAttribute("userid").toString();
                 System.out.println(importMsg);
             }
-//            request.getSession().setAttribute("userid", "");
 
         %>
         <%--        //todo:style="position" 右上角--%>
@@ -192,25 +191,9 @@
     </body>
 
     <script>
+        //点击后跳转到product.jsp
         $('.toggleLink').click(function (event) {
             window.localStorage.setItem('cg', this.getAttribute('proid'))
-            // window.localStorage.setItem('userid', request.getParameter("userid"))
-            // console.log(this.getAttribute('proid'))
-            // this.setAttribute('href', '/webshop_war/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML)
-
-            // $(document).ready(function () {
-            //     var msg = ""
-            //     if ($("#importMsg").text() != null) {
-            //         msg = $("#importMsg").text();
-            //     }
-            //     // if (msg != "") {
-            //     //     alert(msg);
-            //     //
-            //     // }
-            // });
-
-            <%--var msg = <%=(String) session.getAttribute("userid")%>;--%>
-
             $('#showFrame').attr('src', '/webshop_war_exploded/hello-servlet?id=' + this.getAttribute('proid') + '&name=' + this.innerHTML + '&userid=' + $("#importMsg").text())
         })
 

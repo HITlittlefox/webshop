@@ -24,87 +24,7 @@
         <!-- 引入 layui.css -->
         <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
         <link rel="stylesheet" href="css/category1.css">
-        <style>
-            ul {
-                padding: .1rem 2%;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
 
-            li {
-                width: 49%;
-                margin-bottom: .1rem;
-                background: #fff;
-                text-align: center;
-                line-height: .3rem;
-            }
-
-            ul > li:nth-child(n+3) {
-                padding-top: 20px;
-            }
-
-
-            .price {
-                color: #e51212;
-            }
-
-            html, body, div, span, applet, object, iframe,
-            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-            a, abbr, acronym, address, big, cite, code,
-            del, dfn, em, img, ins, kbd, q, s, samp,
-            small, strike, strong, sub, sup, tt, var,
-            b, u, i, center,
-            dl, dt, dd, menu, ol, ul, li,
-            fieldset, form, label, legend,
-            table, caption, tbody, tfoot, thead, tr, th, td,
-            article, aside, canvas, details, embed,
-            figure, figcaption, footer, header, hgroup,
-            main, menu, nav, output, ruby, section, summary,
-            time, mark, audio, video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-            }
-
-            /* HTML5 display-role reset for older browsers */
-            article, aside, details, figcaption, figure,
-            footer, header, hgroup, main, menu, nav, section {
-                display: block;
-            }
-
-            /* HTML5 hidden-attribute fix for newer browsers */
-            *[hidden] {
-                display: none;
-            }
-
-            body {
-                line-height: 1;
-            }
-
-            menu, ol, ul {
-                list-style: none;
-            }
-
-            blockquote, q {
-                quotes: none;
-            }
-
-            blockquote:before, blockquote:after,
-            q:before, q:after {
-                content: '';
-                content: none;
-            }
-
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-
-        </style>
         <%
             //数据库链接
             String userName = "root";
@@ -186,19 +106,20 @@
             System.out.println("whatproductuserid!" + (String) session.getAttribute("userid"));
 
             //    sessionStorage.setItem("lastname", "Smith");
-
+            //    获取标签中的内容，用jsp和html实现session获取
             String importMsg = "";
             if (request.getSession().getAttribute("userid") != null) {
                 importMsg = request.getSession().getAttribute("userid").toString();
                 System.out.println(importMsg);
             }
-//            request.getSession().setAttribute("userid", "");
+            //      request.getSession().setAttribute("userid", "");
 
         %>
         <h3 id="importMsg"><%=importMsg%>
         </h3>
     </body>
     <script>
+        //点击后跳转到product-Info.jsp
         $('.toggleLink').click(function (event) {
             // window.localStorage.setItem('cg', this.getAttribute('proid'))
             // console.log(this.getAttribute('proid'))
