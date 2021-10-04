@@ -62,17 +62,17 @@
         <title>您的购物车页面！</title>
         <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
         <%--        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
-        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
+        <%--        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
+        <link href="css/category1.css" rel="stylesheet">
     </head>
     <body>
-        <h1>这里是<em><%=user_name%>
-        </em>的购物车页面！</h1>
-        <h3><a href="index.jsp">回到首页</a></h3>
+        <div class="pos_abs2">
+            <h1>这里是<em><%=user_name%>
+            </em>的购物车页面！</h1>
+            <h3><a href="index.jsp">回到首页</a></h3>
 
-        <h3><a href="Category1.jsp?userid=<%=userid%>">返回产品分类页面</a></h3>
-
-
+            <h3><a href="Category1.jsp?userid=<%=userid%>">返回产品分类页面</a></h3>
+        </div>
         <%--        <form method="post" action="showInfo2.jsp?userid=<%=userid%>">--%>
 
         <table>
@@ -103,12 +103,12 @@
         </table>
 
         <%
-            String order_flag = (String) request.getParameter("order_flag");
-            System.out.println("yourflagis" + order_flag);
+            String flagOrder = (String) request.getParameter("flagOrder");
+            System.out.println("yourflagis" + flagOrder);
             String address = request.getParameter("address");
             String order_time = request.getParameter("order_time");
 
-            if (Objects.equals(order_flag, "true")) {
+            if (Objects.equals(flagOrder, "true")) {
 
                 //第一条sql语句！对订单表单进行insert
                 String sql3 = "insert into order_sheet (user_id,address,order_time) values ('" + userid + "','" + address + "','" + order_time + "')";
@@ -123,14 +123,14 @@
 
             }
         %>
-        <form method="post" action="showInfo2.jsp?userid=<%=userid%>&order_flag=true">
+        <form method="post" action="showInfo2.jsp?userid=<%=userid%>&flagOrder=true">
             <table>
                 <tr>
                     <td>地址</td>
-                    <% if (!Objects.equals(order_flag, "true")) {
+                    <% if (!Objects.equals(flagOrder, "true")) {
                     %>
                     <td>
-                        <input type="text" name="address">
+                        <input class="button" type="text" name="address">
                     </td>
                     <%
                         }
@@ -140,10 +140,10 @@
                 </tr>
                 <tr>
                     <td>下单日期</td>
-                    <% if (!Objects.equals(order_flag, "true")) {
+                    <% if (!Objects.equals(flagOrder, "true")) {
                     %>
                     <td>
-                        <input type="text" name="order_time">
+                        <input class="button" type="text" name="order_time">
                     </td>
                     <%
                         }
@@ -152,11 +152,14 @@
                     </td>
                 </tr>
             </table>
-            <input type="submit" value="提交"
-                   onclick="document.getElementsByName(address).hidden='hidden';document.getElementsByName(order_time).hidden='hidden'">
+            <%
+                if (!Objects.equals(flagOrder, "true")) {
+            %>
+            <input type="submit" value="提交" onclick="changeVisibility()">
+            <%}%>
         </form>
 
-        <% if (Objects.equals(order_flag, "true")) {
+        <% if (Objects.equals(flagOrder, "true")) {
         %>
         <h2>您已下单！感谢您的购买！</h2>
         <%
@@ -165,6 +168,11 @@
 
     </body>
     <script type="text/javascript">
+        function changeVisibility() {
+            document.getElementsByName(address).hidden = 'hidden';
+            document.getElementsByName(order_time).hidden = 'hidden';
+        }
+
         function doSubmit(formId, actionUrl, target) {
             var targetForm = document.getElementById(formId);
             targetForm.action = actionUrl;//表单提交的地址

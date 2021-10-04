@@ -13,3 +13,9 @@ html, div, body {
 p, a {
     color: azure;
 }
+
+div.pos_abs2 {
+    position: absolute;
+    right: 300px;
+    top: 20px
+}
