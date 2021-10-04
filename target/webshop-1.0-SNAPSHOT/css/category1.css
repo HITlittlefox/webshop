@@ -1,0 +1,15 @@
+div.pos_abs {
+    position: absolute;
+    left: 300px;
+    top: 20px
+}
+
+html, div, body {
+    color: white;
+    background-color: #56536A;
+
+}
+
+p, a {
+    color: azure;
+}

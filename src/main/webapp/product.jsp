@@ -22,8 +22,8 @@
         <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <title>分类</title>
         <!-- 引入 layui.css -->
-        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
-
+        <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
+        <link rel="stylesheet" href="css/category1.css">
         <style>
             ul {
                 padding: .1rem 2%;

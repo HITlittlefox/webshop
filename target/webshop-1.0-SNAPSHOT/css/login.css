@@ -57,6 +57,7 @@ input {
 }
 
 .button {
+    align-content: center;
     border-color: cornsilk;
     background-color: rgba(100, 149, 237, .7);
     color: aliceblue;

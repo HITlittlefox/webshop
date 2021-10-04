@@ -29,13 +29,6 @@
     //实例化链接
     Connection conn = DriverManager.getConnection(url);
     Statement stmt = conn.createStatement();
-
-    if (conn != null) {
-%>
-<h2><%="数据库连接成功！"%>
-</h2>
-<%
-    }
 %>
 
 <%
@@ -59,14 +52,17 @@
         <%--        <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
         <title>注册检查页面</title>
         <!-- 引入 layui.css -->
-        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+        <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
+        <%--        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
+        <meta content="text/html; charset=UTF-8;"/>
+        <link rel="stylesheet" href="css/login.css">
 
     </head>
     <body>
         <% if (rs.next()) {
 
-        %><h1>注册成功，请登录</h1>
-        <a href="login.jsp">返回登陆</a>
+        %><h1>注册成功，请登录 <a href="login.jsp">返回登陆</a></h1>
+
         <%
         } else {
         %>

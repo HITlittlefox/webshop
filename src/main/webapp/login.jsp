@@ -16,23 +16,14 @@
         <!-- 引入 layui.css -->
         <link rel="stylesheet" href="css/login.css">
         <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
-
     </head>
     <body>
 
-        <%
-            String f = request.getParameter("login_msg");
-            System.out.println(f);
-            if (Objects.equals(f, "false")) {
-        %>
-        <h2>您的登录情况：登陆失败！
-        </h2>
-        <%
-            }
-        %>
 
         <div id="loginDiv">
             <form method="post" action="login-check.jsp" id="form">
+
+
                 <h1 style="text-align: center;color: aliceblue;">登陆</h1>
                 <p>用户:<input id="userName" type="text" name="user"><label id="name_trip"></label></p>
 
@@ -40,7 +31,22 @@
 
                 <div style="text-align: center;margin-top: 30px;">
                     <input type="submit" class="button" value="登陆">
-                    <a href="register.jsp" class="button">注册</a>
+                    <%--                    <a href="register.jsp" class="button">--%>
+                    <%--                        <button class="button">注册</button>--%>
+                    <%--                    </a>--%>
+                    <%--                    --%>
+                    <input type="button" class="button" value="注册"
+                           onclick="javascript:window.location.href='register.jsp'">
+                    <%
+                        String f = request.getParameter("login_msg");
+                        System.out.println(f);
+                        if (Objects.equals(f, "false")) {
+                    %>
+                    <h2>您的登录情况：登陆失败！
+                    </h2>
+                    <%
+                        }
+                    %>
                 </div>
             </form>
         </div>

@@ -10,18 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6334a563-7f00-44e7-925f-ef23d5736805" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login-check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/orderSheet.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/showInfo2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showInfo2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register-check.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/Category1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product-Info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register-check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/register-check.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/showInfo2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/webshop-1.0-SNAPSHOT/showInfo2.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -84,6 +86,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\96361\Desktop\webshop\src\main\webapp\css" />
       <recent name="C:\Users\96361\Desktop\webshop\src\main\webapp" />
     </key>
   </component>
@@ -212,6 +215,11 @@
       <workItem from="1633269826340" duration="1796000" />
       <workItem from="1633273177933" duration="5608000" />
       <workItem from="1633279887217" duration="2692000" />
+      <workItem from="1633283292696" duration="195000" />
+      <workItem from="1633283759081" duration="218000" />
+      <workItem from="1633309817596" duration="2145000" />
+      <workItem from="1633312849612" duration="3415000" />
+      <workItem from="1633316652016" duration="167000" />
     </task>
     <servers />
   </component>

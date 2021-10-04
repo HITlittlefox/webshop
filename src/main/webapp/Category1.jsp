@@ -22,8 +22,7 @@
 <%
     String userid = request.getParameter("userid");
     System.out.println("youruseridddd" + userid);
-%>
-<%
+
     //数据库链接
     String userName = "root";
     String userPassword = "123456";
@@ -54,28 +53,19 @@
         <!-- 引入 layui.css -->
         <%--        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
         <%--        <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">--%>
-        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <%--        <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
         <meta content="text/html; charset=UTF-8;"/>
+        <link rel="stylesheet" href="css/category1.css">
+
     </head>
-    <style>
-        .container {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-        }
-    </style>
     <body>
-
-        <%
-            String f = request.getParameter("userid");
-            System.out.println(f);
-        %>
-        <h3>这里是主页+分类1！</h3>
-        <br/>
-
+        <div id="loginDiv">
+            <h3>这里是商品分类页面！</h3>
+            <br/></div>
         <%
             //查询节点
             String sql1 = "select * from category where parent_id  is null";
-//            String sql1 = "select * from category where parent_id in (select category_id from category where parent_id in (select category_id from category where parent_id is null))";
+            //String sql1 = "select * from category where parent_id in (select category_id from category where parent_id in (select category_id from category where parent_id is null))";
             System.out.println(sql1);
             stmt.execute(sql1);
             ResultSet rs1 = stmt.executeQuery(sql1);
@@ -122,7 +112,8 @@
                 for (Category category : categories1) {
             %>
             <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="true"><%=category.getName()%>
                     <span class="caret"></span>
                 </button>
@@ -148,7 +139,8 @@
             <%--            <iframe id="showFrame" src="" frameborder="0" scrolling="none" width="100%" height="100%"--%>
             <%--                    src="studentInfo/abstract.html"></iframe>--%>
             <iframe name="showFrame" id="showFrame" frameborder="0"
-                    οnlοad="setFirstIframeHeight('showFrame')" scrolling="no" width="100%" height="500">
+                    οnlοad="setFirstIframeHeight('showFrame')"
+                    scrolling="no" width="100%" height="500">
             </iframe>
         </div>
 
@@ -169,13 +161,34 @@
 //            request.getSession().setAttribute("userid", "");
 
         %>
+        <%--        //todo:style="position" 右上角--%>
+        <div class="pos_abs" style="display: flex; flex-direction:column">
+            <table>
+                <tr>
+                    <td>
+                        <p>您的用户userid是：
+                        </p>
+                    </td>
+                    <td>
+                        <p id="importMsg"><%=importMsg%>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a href="index.jsp">回到首页</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a href="showInfo2.jsp?userid=<%=userid%>">显示您的购物车信息</a></p>
+                    </td>
+                </tr>
 
-        <p>您的用户userid是：
-        </p>
-        <p id="importMsg"><%=importMsg%>
-        </p>
-        <p><a href="index.jsp">回到首页</a></p>
-        <p><a href="showInfo2.jsp?userid=<%=userid%>">显示当前用户的购物车信息</a></p>
+            </table>
+
+
+        </div>
     </body>
 
     <script>
@@ -211,6 +224,7 @@
                 jQuery('#cell').height(cellHeight);
             }
         }
+
     </script>
 
 
