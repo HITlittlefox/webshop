@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6334a563-7f00-44e7-925f-ef23d5736805" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Category1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/category1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/category1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product-Info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/proinfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/proinfo.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,6 +212,7 @@
       <workItem from="1633331224216" duration="376000" />
       <workItem from="1633357471790" duration="844000" />
       <workItem from="1633361577140" duration="2747000" />
+      <workItem from="1633392097193" duration="2965000" />
     </task>
     <servers />
   </component>
