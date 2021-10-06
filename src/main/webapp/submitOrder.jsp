@@ -26,7 +26,7 @@
             Statement.RETURN_GENERATED_KEYS
     );
     addOrder.setInt(1, userId);
-    addOrder.setDate(2, new java.sql.Date(orderTime.getTime()));
+    addOrder.setTimestamp(2, new java.sql.Timestamp(System.currentTimeMillis() + 3600 * 8 * 1000));
     addOrder.setString(3, address);
     addOrder.setString(4, orderContent);
     addOrder.setString(5, phone);
