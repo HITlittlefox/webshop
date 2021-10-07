@@ -18,6 +18,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
+<%--<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>--%>
+<%--<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>--%>
+<%--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"--%>
+<%--      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">--%>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
+
+<%--<script src="https://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>--%>
+<%--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"--%>
+<%--        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"--%>
+<%--        crossorigin="anonymous"></script>--%>
+
 <%--todo 映入眼帘的主页--%>
 
 <%
@@ -32,12 +43,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title>商城|主页</title>
         <meta content="text/html; charset=UTF-8;"/>
         <link rel="stylesheet" href="css/category1.css">
 
     </head>
     <body>
+        <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+
         <div id="loginDiv">
             <h3>这里是商品分类页面！</h3>
             <br/></div>
